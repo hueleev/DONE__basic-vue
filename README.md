@@ -4,8 +4,8 @@
 1. ~~기초 익히기 기본 강좌] 01 뷰 인스턴스 생성하기!~~
 2. ~~뷰 데이터 (data) 와 메소드 (methods)~~
 3. ~~데이터 바인딩 (Data Binding)~~
-4. 이벤트 (Events)
-5. 데이터 양방향 바인딩 (Data Two Way Binding - v-model)
+4. ~~이벤트 (Events)~~
+5. ~~데이터 양방향 바인딩 (Data Two Way Binding - v-model)~~
 6. Computed 속성
 7. Watch 속성
 8. 클래스 & 스타일 바인딩
