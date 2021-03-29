@@ -8,7 +8,7 @@
 5. ~~데이터 양방향 바인딩 (Data Two Way Binding - v-model)~~
 6. ~~Computed 속성~~
 7. ~~Watch 속성~~
-8. 클래스 & 스타일 바인딩
+8. ~~클래스 & 스타일 바인딩~~
 9. v-if 와 v-show
 10. v-for 리스트 렌더링
 11. 여러개의 Vue 인스턴스 사용하기
