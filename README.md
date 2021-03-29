@@ -6,8 +6,8 @@
 3. ~~데이터 바인딩 (Data Binding)~~
 4. ~~이벤트 (Events)~~
 5. ~~데이터 양방향 바인딩 (Data Two Way Binding - v-model)~~
-6. Computed 속성
-7. Watch 속성
+6. ~~Computed 속성~~
+7. ~~Watch 속성~~
 8. 클래스 & 스타일 바인딩
 9. v-if 와 v-show
 10. v-for 리스트 렌더링

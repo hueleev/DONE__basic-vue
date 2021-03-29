@@ -5,32 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뷰 기초 익히기</title>
+    <style>
+        .red {
+            color: red;
+        }
+        .font-bold {
+            font-weight: bold;
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-    <!-- computed는 캐싱처리를 한다. method는 매번 계산하는 반면 computed는 한번 계산한 식을 활용 -->
     <div id="app">
-        <button @click="changeMessage">Click</button>
-        {{ reversedMessage() }}
+        <div :style="{ color: red, fontSize: size}">StyleBinding</div>
+        <div :class="{ red: isRed, 'font-bold': isBold }">ClassBinding</div>
+        <button @click="update">click</button>
     </div>
     <script>
         new Vue({
             el: '#app',
             data: {
-                message: '안녕하세요'
+                red: 'red',
+                size: '30px',
+                isRed: false,
+                isBold: false
             },
             methods: {
-               changeMessage() {
-                   this.message = '코지코더';
-               },
-               reversedMessage() {
-                    return this.message.split('').reverse().join('');
-                }
-            },
-            computed: {
-                // reversedMessage() {
-                //     return this.message.split('').reverse().join('');
-                // }
+               update() {
+                   this.isRed = !this.isRed;
+                   this.isBold = !this.isBold;
+               }
             }
         })
     </script>
