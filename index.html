@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="vie, age: 20wport" content="width=device-width, initial-scale=1.0">
     <title>뷰 기초 익히기</title>
     <style>
         .red {
@@ -16,42 +16,23 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-    <!--
-        v-if는 토글비용이 높고, v-show는 초기 랜더링 비용이 높다.
-        자주 바꾸길 원한다면 v-show
-        런타임 시, 조건이 바뀌지 않으면 v-if
-    -->
     <div id="app">
-        <!-- <template v-if="number === 1">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-        </template>
-        <div v-else-if="number === 2">Hi</div>
-        <div v-else>No</div>
-        <button @click="increaseNumber">Increase</button> 
-        <button @click="decreaseNumber">decreaseNumber</button> {{ number }} -->
-        <div v-show="show">Yes</div>
-        <br>
-        <button @click="toggle">Toggle</button>
+        <div v-for="(person, index) in people" :key="person.id">
+            {{ person.id }} : {{ person.name }} {{ person.age }}
+        </div>
     </div>
     <script>
         new Vue({
             el: '#app',
             data: {
-                number: 1,
-                show: true
+                people: [
+                    { id: 1, name: 'a', age: 20 },
+                    { id: 2, name: 'b', age: 21 },
+                    { id: 3, name: 'c', age: 22 }
+                ]
             },
             methods: {
-                increaseNumber() {
-                    this.number++;
-                },
-                decreaseNumber() {
-                    this.number--;
-                },
-                toggle() {
-                    this.show = !this.show
-                }
+                
             }
         })
     </script>
