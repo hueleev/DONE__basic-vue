@@ -8,37 +8,29 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
+    <!-- computed는 캐싱처리를 한다. method는 매번 계산하는 반면 computed는 한번 계산한 식을 활용 -->
     <div id="app">
-        {{ year }}
-        <form v-on:submit.prevent="submit">
-            <!-- <input type="text" :value="text" @keyup="updateText"><br> -->
-            <input type="text" v-model="text"><br> <!-- 양방향 바인딩-->
-            {{ text }}<br>
-            <button type="submit">Submit</button>
-        </form>
-
+        <button @click="changeMessage">Click</button>
+        {{ reversedMessage() }}
     </div>
     <script>
         new Vue({
             el: '#app',
             data: {
-                year: 2018,
-                text: 'text'
+                message: '안녕하세요'
             },
             methods: {
-                plus() {
-                    this.year++;
-                },
-                minus() {
-                    this.year--;
-                },
-                submit() {
-                    alert('submitted');
-                    console.log('hello')
-                },
-                updateText(event) {
-                    this.text = event.target.value;
+               changeMessage() {
+                   this.message = '코지코더';
+               },
+               reversedMessage() {
+                    return this.message.split('').reverse().join('');
                 }
+            },
+            computed: {
+                // reversedMessage() {
+                //     return this.message.split('').reverse().join('');
+                // }
             }
         })
     </script>
