@@ -1,7 +1,14 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <KossieCoder name="KOSSIE"/>
+    <KossieCoder>
+      <!-- slot 내용 -->
+      <template #header="{ kossie }">
+        <p>headerSlot# - {{ kossie }} </p>
+      </template>
+      <template v-slot:default>
+        <p>defaultSlot</p>
+      </template>
+    </KossieCoder>
   </div>
 </template>
 

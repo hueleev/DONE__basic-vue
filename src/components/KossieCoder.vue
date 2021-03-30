@@ -1,7 +1,12 @@
 <template>
     <div>
+        <p>header</p>
+        <slot name="header" :kossie="kossie"></slot>
         <h1>{{ title }}</h1>
+        <p>Body</p>
         <p>{{ name }}</p>
+        <slot></slot>
+        <p>footer</p>
         <button @click="updateName">Change Name</button>
     </div>    
 </template>
@@ -20,6 +25,7 @@ export default {
     }, 
     data() {
         return {
+            kossie: 'coder'
         }
     },
     methods: {
