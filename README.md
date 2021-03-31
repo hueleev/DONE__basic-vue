@@ -20,8 +20,8 @@
 17. ~~부모 컴포넌트로 데이터 보내기 (Emit)~~
 18. ~~슬롯 (Slot)~~
 19. ~~뷰 인스턴스 라이프사이클~~
-20. Todo App 1
-21. Todo App 2
+20. ~~Todo App 1~~
+21. ~~Todo App 2~~
 22. Vuex 준비 및 설치
 23. Vuex State
 24. Vuex Mutations
