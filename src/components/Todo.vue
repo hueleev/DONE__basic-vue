@@ -24,13 +24,10 @@ export default {
     },
     methods: {
         toggleCheckbox(e) {
-            this.$emit('toggle-checkbox', {
-                id: this.todo.id,
-                checked: e.target.checked
-            })
+            this.$store.dispatch('todo/toggleTodo', {id:this.todo.id, checked: e.target.checked});
         },
         clickDelete() {
-            this.$emit('click-delete', this.todo.id);
+            this.$store.dispatch('todo/deleteTodo', this.todo.id);
         }
     }
 }

@@ -1,6 +1,9 @@
 # Vue.js study
-  - [youtube](https://www.youtube.com/playlist?list=PLB7CpjPWqHOtYP7P_0Ls9XNed0NLvmkAh)
+
+-   [youtube](https://www.youtube.com/playlist?list=PLB7CpjPWqHOtYP7P_0Ls9XNed0NLvmkAh)
+
 ## Contents
+
 1. ~~기초 익히기 기본 강좌] 01 뷰 인스턴스 생성하기!~~
 2. ~~뷰 데이터 (data) 와 메소드 (methods)~~
 3. ~~데이터 바인딩 (Data Binding)~~
@@ -22,31 +25,37 @@
 19. ~~뷰 인스턴스 라이프사이클~~
 20. ~~Todo App 1~~
 21. ~~Todo App 2~~
-22. Vuex 준비 및 설치
-23. Vuex State
-24. Vuex Mutations
-25. Vuex Actions
-26. Vuex Getters & Map 헬퍼
-27. Vuex Modules
+22. ~~Vuex 준비 및 설치~~
+23. ~~Vuex State~~
+24. ~~Vuex Mutations~~
+25. ~~Vuex Actions~~
+26. ~~Vuex Getters & Map 헬퍼~~
+27. ~~Vuex Modules~~
+
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
 ### Lints and fixes files
+
 ```
 npm run lint
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
